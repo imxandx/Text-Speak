@@ -6,11 +6,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #111;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     overflow: hidden;
 }
+
+.ale {
+    width: 200;
+    height: 200px;
+    margin-left: -65%;
+    margin-top: 5%;
+}
+
+
 textarea {
-    margin-top: 300px;
+    margin-top: 2%;
     width: 500px;
     height: 250px;
     align-items: center;
@@ -34,7 +45,33 @@ button {
 }
 
 button:hover {
-    transform: skewX(-20deg);
-    background-color: #000 ;
-    color: #fff;
+    background-color: yellow ;
+    color: #000;
+}
+
+@media(max-width: 420px) {
+    .ale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1%;
+    }
+}
+
+@media(max-width: 717px) {
+    .ale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+    }
+}
+
+@media(max-width: 1125px) {
+    .ale{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0%;
+    }
 }
