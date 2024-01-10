@@ -21,7 +21,7 @@ body {
 
 
 textarea {
-    margin-top: 2%;
+    margin-top: -5%;
     width: 500px;
     height: 250px;
     align-items: center;
@@ -29,6 +29,7 @@ textarea {
     border-radius: 8px;
     font-family: "Kdam Thmor Pro", sans-serif;
     font-size: 20px;
+    padding-left: 7px;
 }
 
 button {
@@ -47,7 +48,10 @@ button {
 button:hover {
     background-color: yellow ;
     color: #000;
+    cursor: pointer;
 }
+
+/* RESPONSIVIDADE */
 
 @media(max-width: 420px) {
     .ale {
